@@ -50,10 +50,16 @@ public class PlayerManager : MonoBehaviour
 	public void UseKey(){
 		hasKey = false;
 	}
-	/* [ADDED] */
-	
-	//Ajoute 1 au compteur de morts
-	public void AddDeath(){
+    /* [ADDED] */
+    public bool hasTorche = false;
+
+    public void AddTorche()
+    {
+        hasTorche = true;
+    }
+
+    //Ajoute 1 au compteur de morts
+    public void AddDeath(){
 		nbDeath++;
 		if(hud != null){ //On édite le HUD
 			hud.updateDeathText(nbDeath);

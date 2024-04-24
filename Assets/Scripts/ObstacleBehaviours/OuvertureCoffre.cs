@@ -4,32 +4,43 @@ using UnityEngine;
 
 public class OuvertureCoffre : MonoBehaviour
 {
-    [SerializeField] private GameObject Key;
+    [SerializeField] private GameObject key;
     [SerializeField] private GameObject chest;
-    [SerializeField] private float offsetY = -1.0f;
-    [SerializeField] private KeyCode activationKey = KeyCode.E; 
+    [SerializeField] private KeyCode activationKey = KeyCode.E;
+    [SerializeField] private float activationRadius = 1.5f;
 
-
+    private bool keySpawned = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        // Désactiver la clé au début
+        if (key != null)
+        {
+            key.SetActive(false);
+        }
     }
-
     // Update is called once per frame
     void Update()
     {
+        GameObject player = GameObject.FindWithTag("Player");
         if (Input.GetKeyDown(activationKey))
         {
-            SpawnKey();
+            float distance = Vector3.Distance(player.transform.position, chest.transform.position);
+
+            // Vérifiez si le joueur est dans le rayon d'activation
+            if (distance <= activationRadius)
+            {
+                SpawnKey(); // Appeler la fonction pour activer la clé
+            }
         }
     }
     private void SpawnKey()
     {
-        if (Key != null && chest != null)
+        if (key != null)
         {
-            Vector3 spawnPosition = chest.transform.position + new Vector3(0, offsetY, 0); // Décalage sous le coffre
-            Instantiate(Key, spawnPosition, Quaternion.identity);
+           if (keySpawned == false)
+               keySpawned = true;
+               key.SetActive(true);
         }
         else
         {
