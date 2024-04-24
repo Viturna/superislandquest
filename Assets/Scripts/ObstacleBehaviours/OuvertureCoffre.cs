@@ -30,21 +30,36 @@ public class OuvertureCoffre : MonoBehaviour
             // Vérifiez si le joueur est dans le rayon d'activation
             if (distance <= activationRadius)
             {
+
                 SpawnKey(); // Appeler la fonction pour activer la clé
             }
         }
     }
     private void SpawnKey()
     {
-        if (key != null)
+        if (key != null && chest != null)
         {
-           if (keySpawned == false)
-               keySpawned = true;
-               key.SetActive(true);
+            if (!keySpawned)
+            {
+                keySpawned = true;
+                key.SetActive(true);
+
+                // Déclencher l'animation d'ouverture du coffre
+                Animator chestAnimator = chest.GetComponent<Animator>();
+                if (chestAnimator != null)
+                {
+                    chestAnimator.SetTrigger("OpenChest");
+                }
+                else
+                {
+                    Debug.LogError("Animator component not found on the chest object.");
+                }
+            }
         }
         else
         {
-            Debug.LogError("key ou chest n'est pas défini.");
+            Debug.LogError("Key or chest is not defined.");
         }
     }
+
 }
