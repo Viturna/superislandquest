@@ -7,21 +7,27 @@ public class DalleDrop : MonoBehaviour
     [SerializeField] private float delay = 0.5f;
     [SerializeField] private float shakeMagnitude = 0.1f;
     [SerializeField] private float shakeDuration = 0.1f;
+    private SpriteRenderer spriteRenderer;
+
+    void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     void OnTriggerEnter2D(Collider2D col)
     {
         // Si le joueur entre en collision avec l'objet
         if (col.gameObject.CompareTag("Player"))
         {
-            Invoke("DestroyObject", delay);
+            Invoke("FadeOutObject", delay);
 
             Shake();
         }
     }
 
-    void DestroyObject()
+    void FadeOutObject()
     {
-        Destroy(gameObject);
+        StartCoroutine(FadeOutCoroutine());
     }
 
     void Shake()
@@ -49,4 +55,19 @@ public class DalleDrop : MonoBehaviour
 
         transform.position = originalPosition;
     }
+
+    IEnumerator FadeOutCoroutine()
+    {
+        float elapsedTime = 0f;
+        while (elapsedTime < delay)
+        {
+            float alpha = Mathf.Lerp(1f, 0f, elapsedTime / delay);
+            spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, alpha);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+        // Une fois que la transition est terminée, vous pouvez détruire l'objet
+        //Destroy(gameObject);
+    }
+
 }

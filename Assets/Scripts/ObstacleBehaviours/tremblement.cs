@@ -6,6 +6,7 @@ public class TremblementReveil : MonoBehaviour
     public float distance = 0.1f; // Distance maximale de déplacement
     private bool versLaDroite = true; // Indique si le réveil se déplace vers la droite
     private Vector2 positionActuelle;
+    [SerializeField] private AudioManager audioManager;
 
     private void Start()
     {
@@ -14,6 +15,7 @@ public class TremblementReveil : MonoBehaviour
 
     void Update()
     {
+        audioManager.PlaySFX(audioManager.clockSFX);
         // Déplace le réveil de gauche à droite
         if (versLaDroite)
         {

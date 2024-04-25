@@ -10,11 +10,13 @@ public class VerticalMoveLoop : MonoBehaviour
     [SerializeField] private float delay = 0f;
     private Vector2 movement;
 	private int ecart = 3;
-	
-	//Au démarrage, défini la variable de mouvement
-	void Start(){
+    private Vector2 initialPosition;
+
+    //Au démarrage, défini la variable de mouvement
+    void Start(){
 		movement = new Vector2(0, ySens);
-	}
+        initialPosition = transform.position;
+    }
 
 	//A chaque frame, on bouge l'objet via son rigidbody dans le mouvement défini * la vitesse de l'objet moveSpeed * Time.fixedDeltaTime le laps de temps écoulé en 1 frame
 	void FixedUpdate() {
@@ -40,5 +42,26 @@ public class VerticalMoveLoop : MonoBehaviour
 		moveSpeed = _speed;
 		ySens = _ySens;
 		movement = new Vector2(0, ySens);
-	}
+        initialPosition = transform.position;
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        // Si l'obstacle rentre en collision avec un mur, on arrête son mouvement vertical
+        if (col.gameObject.tag == "Wall")
+        {
+            movement = Vector2.zero;
+            transform.position = initialPosition;
+            if (delay > 0)
+            {
+                delay = delay - Time.fixedDeltaTime;
+            }
+            else
+            {
+                movement = new Vector2(0, ySens);
+                rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+            }
+        }
+    }
+
 }
