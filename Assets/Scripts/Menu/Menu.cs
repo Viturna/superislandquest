@@ -114,14 +114,16 @@ public class Menu : MonoBehaviour
 		_readingRules = 1;
 		
 	}
-	
-	//Fonction qui affiche la première image des crédits
-	public void ReadCredits()
+    public void ReturnMenu()
+    {
+        SceneManager.LoadScene("TitleMenu");
+    }
+
+    //Fonction qui affiche la première image des crédits
+    public void ReadCredits()
 	{
-		_picturesGroupCredits.SetActive(true);
-		_picturesCredits[0].SetActive(true);
-		_readingCredits = 1;
-	}
+        SceneManager.LoadScene("Credits");
+    }
 
 	//Fonction qui ferme le jeu
 	public void QuitGame()
