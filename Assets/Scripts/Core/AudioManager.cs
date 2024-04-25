@@ -15,6 +15,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip doorSFX;
     public AudioClip coinsSFX;
     public AudioClip clockSFX;
+    public AudioClip arrowSFX;
     void Start()
     {
 		if(musicSource != null){ //Si une musique de fond a été définie, on la joue

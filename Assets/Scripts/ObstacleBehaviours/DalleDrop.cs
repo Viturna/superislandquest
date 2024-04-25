@@ -67,7 +67,7 @@ public class DalleDrop : MonoBehaviour
             yield return null;
         }
         // Une fois que la transition est terminée, vous pouvez détruire l'objet
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
 
 }

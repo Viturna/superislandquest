@@ -15,7 +15,6 @@ public class TremblementReveil : MonoBehaviour
 
     void Update()
     {
-        audioManager.PlaySFX(audioManager.clockSFX);
         // Déplace le réveil de gauche à droite
         if (versLaDroite)
         {

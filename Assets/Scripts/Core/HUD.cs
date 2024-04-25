@@ -20,7 +20,7 @@ public class HUD : MonoBehaviour
 	}
     public void updateMoneyText(int nbMoney)
     {
-        moneyText.GetComponent<TMP_Text>().text = nbMoney + " pièce(s)";
+        moneyText.GetComponent<TMP_Text>().text = nbMoney + "";
     }
 
     public void updateTimer(float time){

@@ -8,6 +8,7 @@ public class VerticalMoveLoop : MonoBehaviour
 	[SerializeField] private int ySens = 1; //Le sens de l'objet (1 si en bas, -1 si en haut)
 	[SerializeField] private Rigidbody2D rb; //Le rigidbody pour bouger l'obstacle
     [SerializeField] private float delay = 0f;
+
     private Vector2 movement;
 	private int ecart = 3;
     private Vector2 initialPosition;
