@@ -29,5 +29,4 @@ public class HUD : MonoBehaviour
 		timerText.GetComponent<TMP_Text>().text = " " + time.ToString("F2")  +"s";
 	}
 
-  
 }

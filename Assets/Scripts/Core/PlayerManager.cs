@@ -91,7 +91,7 @@ public class PlayerManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "SceneToEdit" && _numTableau == 8)
         {
             StopTimer();
-            hud.showStatMission(nbMoney, timerGame);
+           
         }
 
     }
