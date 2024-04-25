@@ -332,7 +332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &46325178
@@ -473,7 +473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 46325177}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!1 &53509540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,7 +1025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &97336865
@@ -1166,7 +1166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 97336864}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!1 &117612108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1563,7 +1563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &130081293
@@ -1704,7 +1704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 130081292}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!1 &132014714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1769,7 +1769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &132014718
@@ -1910,7 +1910,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 132014717}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!1 &134885822
 GameObject:
   m_ObjectHideFlags: 0
@@ -2282,7 +2282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &194197565
@@ -2423,7 +2423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 194197564}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!1 &194734769
 GameObject:
   m_ObjectHideFlags: 0
@@ -2618,7 +2618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &195327256
@@ -2759,7 +2759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 195327255}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!4 &195343960 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4530897992884546598, guid: 2d88d8eaa28a2774397927a1cf166d5b, type: 3}
@@ -3834,7 +3834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &313752958
@@ -3975,7 +3975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 313752957}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!1 &320256468
 GameObject:
   m_ObjectHideFlags: 0
@@ -4199,7 +4199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &326873793
@@ -4340,7 +4340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 326873792}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!1 &360726584
 GameObject:
   m_ObjectHideFlags: 0
@@ -4405,7 +4405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &360726588
@@ -4546,7 +4546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 360726587}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!1 &369118451
 GameObject:
   m_ObjectHideFlags: 0
@@ -4577,7 +4577,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 928092701}
   - {fileID: 1086915933}
   m_Father: {fileID: 1432177933}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4704,7 +4703,7 @@ MonoBehaviour:
   moveSpeed: 5
   ySens: -1
   rb: {fileID: 402752035}
-  delay: 5.6
+  delay: 4.5
 --- !u!50 &402752035
 Rigidbody2D:
   serializedVersion: 4
@@ -6654,7 +6653,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.10400941}
@@ -8020,7 +8019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &706857587
@@ -8161,7 +8160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 706857586}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!1 &708055927
 GameObject:
   m_ObjectHideFlags: 0
@@ -8979,203 +8978,6 @@ MonoBehaviour:
   teleporterLeft: {fileID: 718302741}
   teleporterRight: {fileID: 0}
   teleporterBottom: {fileID: 0}
---- !u!1001 &795928217
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 369118452}
-    m_Modifications:
-    - target: {fileID: 526066916873109287, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.0056485403
-      objectReference: {fileID: 0}
-    - target: {fileID: 526066916873109287, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.0056485403
-      objectReference: {fileID: 0}
-    - target: {fileID: 526066916873109287, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.0056485403
-      objectReference: {fileID: 0}
-    - target: {fileID: 526066916873109287, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -640.423
-      objectReference: {fileID: 0}
-    - target: {fileID: 526066916873109287, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -362.051
-      objectReference: {fileID: 0}
-    - target: {fileID: 526066916873109287, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005103486191695707, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.0056485403
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005103486191695707, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.0056485403
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005103486191695707, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.0056485403
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005103486191695707, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.19897461
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005103486191695707, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -721.94
-      objectReference: {fileID: 0}
-    - target: {fileID: 1005103486191695707, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1493606944855708668, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.0069743884
-      objectReference: {fileID: 0}
-    - target: {fileID: 1493606944855708668, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.0069743884
-      objectReference: {fileID: 0}
-    - target: {fileID: 1493606944855708668, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.0069743884
-      objectReference: {fileID: 0}
-    - target: {fileID: 1493606944855708668, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -640.9901
-      objectReference: {fileID: 0}
-    - target: {fileID: 1493606944855708668, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -360.98062
-      objectReference: {fileID: 0}
-    - target: {fileID: 1493606944855708668, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1887848843288938883, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.0069743884
-      objectReference: {fileID: 0}
-    - target: {fileID: 1887848843288938883, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.0069743884
-      objectReference: {fileID: 0}
-    - target: {fileID: 1887848843288938883, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.0069743884
-      objectReference: {fileID: 0}
-    - target: {fileID: 1887848843288938883, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -1280.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 1887848843288938883, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -1.1862793
-      objectReference: {fileID: 0}
-    - target: {fileID: 1887848843288938883, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5187822345693569136, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: d102e83bd72b84ba3a21c24de189d06e, type: 3}
-    - target: {fileID: 8996122759198052586, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-      propertyPath: m_Name
-      value: Canvas (hud) fin
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
 --- !u!1 &823599082
 GameObject:
   m_ObjectHideFlags: 0
@@ -10093,11 +9895,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4530897992884546598, guid: 2d88d8eaa28a2774397927a1cf166d5b, type: 3}
   m_PrefabInstance: {fileID: 8381119735811773670}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &928092701 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4821709241773030402, guid: 747b8511f06c9d742b9d12f4e7724716, type: 3}
-  m_PrefabInstance: {fileID: 795928217}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &936225231
 GameObject:
   m_ObjectHideFlags: 0
@@ -10497,7 +10294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &951259721
@@ -10638,7 +10435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 951259720}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!1 &955178804
 GameObject:
   m_ObjectHideFlags: 0
@@ -10828,7 +10625,7 @@ MonoBehaviour:
   moveSpeed: 5
   ySens: -1
   rb: {fileID: 955178807}
-  delay: 5
+  delay: 4
 --- !u!1 &970397827
 GameObject:
   m_ObjectHideFlags: 0
@@ -11292,7 +11089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &982904231
@@ -11433,7 +11230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 982904230}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!1 &983020521
 GameObject:
   m_ObjectHideFlags: 0
@@ -11498,7 +11295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &983020525
@@ -11639,7 +11436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 983020524}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!1001 &1002001353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12569,7 +12366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &1104465380
@@ -12710,7 +12507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 1104465379}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!1 &1109712771
 GameObject:
   m_ObjectHideFlags: 0
@@ -12775,7 +12572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &1109712775
@@ -12916,7 +12713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 1109712774}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!1 &1127198459
 GameObject:
   m_ObjectHideFlags: 0
@@ -13815,7 +13612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &1214115740
@@ -13956,7 +13753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 1214115739}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!1 &1222571397
 GameObject:
   m_ObjectHideFlags: 0
@@ -15402,7 +15199,7 @@ MonoBehaviour:
   moveSpeed: 5
   ySens: -1
   rb: {fileID: 1406507727}
-  delay: 5.2
+  delay: 4.2
 --- !u!1 &1415548650
 GameObject:
   m_ObjectHideFlags: 0
@@ -15805,7 +15602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &1488667989
@@ -15946,7 +15743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 1488667988}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!1 &1489725103
 GameObject:
   m_ObjectHideFlags: 0
@@ -16679,7 +16476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &1633016505
@@ -16820,7 +16617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 1633016504}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!1 &1665812826
 GameObject:
   m_ObjectHideFlags: 0
@@ -19093,7 +18890,7 @@ MonoBehaviour:
   moveSpeed: 5
   ySens: -1
   rb: {fileID: 1949402653}
-  delay: 5.8
+  delay: 4.8
 --- !u!50 &1949402653
 Rigidbody2D:
   serializedVersion: 4
@@ -19447,7 +19244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &1980998072
@@ -19588,7 +19385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 1980998071}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!1 &1992545749
 GameObject:
   m_ObjectHideFlags: 0
@@ -19653,7 +19450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &1992545753
@@ -19794,7 +19591,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 1992545752}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!1001 &2013670829
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20199,7 +19996,7 @@ MonoBehaviour:
   moveSpeed: 5
   ySens: -1
   rb: {fileID: 2084541101}
-  delay: 5.5
+  delay: 4.3
 --- !u!50 &2084541101
 Rigidbody2D:
   serializedVersion: 4
@@ -21080,7 +20877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d527683991b478196fb973109d70b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.2
   shakeMagnitude: 0.1
   shakeDuration: 0.1
 --- !u!61 &2141869703
@@ -21221,7 +21018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableauReinit: {fileID: 0}
   dalleDrop: {fileID: 2141869702}
-  delayBeforeAction: 1
+  delayBeforeAction: 0.5
 --- !u!1 &2146113537
 GameObject:
   m_ObjectHideFlags: 0
