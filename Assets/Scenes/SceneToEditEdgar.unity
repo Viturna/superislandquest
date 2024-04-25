@@ -923,6 +923,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vitesse: 1
   distance: 0.1
+  versLaDroite: 1
+  positionActuelle: {x: 0, y: 0}
 --- !u!61 &878611040
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1017,7 +1019,7 @@ SpriteRenderer:
   m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &878611042
@@ -1501,6 +1503,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa1ee39fa312344fca06f758798c9c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactUI: {fileID: 0}
+  isInRange: 0
   animator: {fileID: 0}
 --- !u!95 &1427722363
 Animator:
