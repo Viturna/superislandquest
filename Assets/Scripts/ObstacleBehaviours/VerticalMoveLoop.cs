@@ -7,7 +7,8 @@ public class VerticalMoveLoop : MonoBehaviour
 	[SerializeField] private float moveSpeed = 5f; //Vitesse de l'objet, modifiable
 	[SerializeField] private int ySens = 1; //Le sens de l'objet (1 si en bas, -1 si en haut)
 	[SerializeField] private Rigidbody2D rb; //Le rigidbody pour bouger l'obstacle
-	private Vector2 movement;
+    [SerializeField] private float delay = 0f;
+    private Vector2 movement;
 	private int ecart = 3;
 	
 	//Au démarrage, défini la variable de mouvement
@@ -21,8 +22,14 @@ public class VerticalMoveLoop : MonoBehaviour
 		if(Mathf.Abs(rb.position.y) > TableauManager.maxHeight){
 			rb.position = new Vector2(rb.position. x,rb.position.y * (-1));
 		}
-		//On bouge le cercle via son rigidbody
-		rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        if (delay > 0)
+        {
+            delay = delay - Time.fixedDeltaTime;
+        } else
+		{
+            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        }
+       
 	}
 
 	//Une méthode qui permet d'initialiser les paramètres avec certaines valeurs si besoin
