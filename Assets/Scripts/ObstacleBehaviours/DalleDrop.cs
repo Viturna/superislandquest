@@ -8,6 +8,7 @@ public class DalleDrop : MonoBehaviour
     [SerializeField] private float shakeMagnitude = 0.1f;
     [SerializeField] private float shakeDuration = 0.1f;
     private SpriteRenderer spriteRenderer;
+    private bool isDropped = false;
 
     void Start()
     {
@@ -66,8 +67,13 @@ public class DalleDrop : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+        isDropped = true;
         // Une fois que la transition est terminée, vous pouvez détruire l'objet
-        Destroy(gameObject);
+        //Destroy(gameObject);
+    }
+    public bool IsDropped()
+    {
+        return isDropped; // Retourner l'état de la propriété
     }
 
 }
