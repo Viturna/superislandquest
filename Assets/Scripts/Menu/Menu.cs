@@ -102,7 +102,7 @@ public class Menu : MonoBehaviour
 	{
 		//Mettre entre guillemets le nom de la scène vers laquelle charger
 		//Pour utiliser SceneManager, il faut impérativement rajouter "using UnityEngine.SceneManagement;" en haut du script.
-		SceneManager.LoadScene("SceneTest");
+		SceneManager.LoadScene("SceneToEdit");
 	}
 
 	//Fonction qui affiche la première image des règles
@@ -114,14 +114,16 @@ public class Menu : MonoBehaviour
 		_readingRules = 1;
 		
 	}
-	
-	//Fonction qui affiche la première image des crédits
-	public void ReadCredits()
+    public void ReturnMenu()
+    {
+        SceneManager.LoadScene("TitleMenu");
+    }
+
+    //Fonction qui affiche la première image des crédits
+    public void ReadCredits()
 	{
-		_picturesGroupCredits.SetActive(true);
-		_picturesCredits[0].SetActive(true);
-		_readingCredits = 1;
-	}
+        SceneManager.LoadScene("Credits");
+    }
 
 	//Fonction qui ferme le jeu
 	public void QuitGame()

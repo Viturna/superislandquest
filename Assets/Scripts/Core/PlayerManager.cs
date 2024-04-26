@@ -37,7 +37,8 @@ public class PlayerManager : MonoBehaviour
 	//Variables attributs  du joueur.
 	
 	private int nbDeath = 0; //Enregistre le nombre de morts.
-	private float timerGame = 0;
+    private int nbMoney = 0;
+    private float timerGame = 0;
 	private bool endTimer = false;
 	
 	/* [ADDED] */
@@ -67,8 +68,17 @@ public class PlayerManager : MonoBehaviour
 		audioManager.PlaySFX(audioManager.damageSFX); //Joue le bruitage de dégâts
 	}
 
-	//On récupère le nombre de morts
-	public int GetNbDeath(){
+    public void AddMoney(int x)
+    {
+        nbMoney = nbMoney + x;
+        if (hud != null)
+        { //On édite le HUD
+            hud.updateMoneyText(nbMoney);
+        }
+    }
+
+    //On récupère le nombre de morts
+    public int GetNbDeath(){
 		return nbDeath;
 	}
 	
@@ -78,7 +88,13 @@ public class PlayerManager : MonoBehaviour
 		if(hud != null){ //On édite le HUD
 			hud.updateLevelText(_numTableau);
 		}
-	}
+        if (SceneManager.GetActiveScene().name == "SceneToEdit" && _numTableau == 8)
+        {
+            StopTimer();
+           
+        }
+
+    }
 	
 	public void FinishLine(){
 		audioManager.PlaySFX(audioManager.finishSFX); //Joue le bruitage de fanfare de fin

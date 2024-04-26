@@ -8,8 +8,9 @@ public class OuvertureCoffre : MonoBehaviour
     [SerializeField] private GameObject chest;
     [SerializeField] private KeyCode activationKey = KeyCode.E;
     [SerializeField] private float activationRadius = 1.5f;
-
+    [SerializeField] private float delay = 1f;
     private bool keySpawned = false;
+    [SerializeField] private AudioManager audioManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,21 +31,42 @@ public class OuvertureCoffre : MonoBehaviour
             // Vérifiez si le joueur est dans le rayon d'activation
             if (distance <= activationRadius)
             {
+               
                 SpawnKey(); // Appeler la fonction pour activer la clé
             }
         }
     }
     private void SpawnKey()
     {
-        if (key != null)
+        if (key != null && chest != null)
         {
-           if (keySpawned == false)
-               keySpawned = true;
-               key.SetActive(true);
+            if (!keySpawned)
+            {
+                // Déclencher l'animation d'ouverture du coffre
+                audioManager.PlaySFX(audioManager.coffreSFX);
+                Animator chestAnimator = chest.GetComponent<Animator>();
+                if (chestAnimator != null)
+                {
+                    chestAnimator.SetTrigger("OpenChest");
+                    StartCoroutine(ActivateKeyAfterDelay()); // Appeler la coroutine pour attendre 1 seconde
+                }
+                else
+                {
+                    Debug.LogError("Animator component not found on the chest object.");
+                }
+            }
         }
         else
         {
-            Debug.LogError("key ou chest n'est pas défini.");
+            Debug.LogError("Key or chest is not defined.");
         }
     }
+
+    private IEnumerator ActivateKeyAfterDelay()
+    {
+        yield return new WaitForSeconds(delay); // Attendre le temps spécifié par le délai
+        key.SetActive(true); // Activer la clé
+        keySpawned = true; // Marquer la clé comme générée
+    }
+
 }

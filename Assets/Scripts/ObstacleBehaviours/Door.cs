@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
+    [SerializeField] private AudioManager audioManager;
     void OnTriggerEnter2D(Collider2D col)
     {
         // Si le joueur entre en collision avec l'objet
@@ -12,6 +13,7 @@ public class Door : MonoBehaviour
           
             if (col.gameObject.GetComponent<PlayerManager>().hasKey)
             {
+                audioManager.PlaySFX(audioManager.doorSFX);
                 col.gameObject.GetComponent<PlayerManager>().UseKey();
                 Destroy(gameObject);
             }

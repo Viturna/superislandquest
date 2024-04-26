@@ -8,9 +8,14 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource SFXSource; //Pour les effets sonores
 
     public AudioClip backgroundMusic; //Morceau du niveau
-    public AudioClip damageSFX; //Effet sonore des dégâts
-	public AudioClip finishSFX; //Effet sonore des dégâts
-
+    public AudioClip damageSFX; 
+	public AudioClip finishSFX; 
+    public AudioClip coffreSFX;
+    public AudioClip cleSFX;
+    public AudioClip doorSFX;
+    public AudioClip coinsSFX;
+    public AudioClip clockSFX;
+    public AudioClip arrowSFX;
     void Start()
     {
 		if(musicSource != null){ //Si une musique de fond a été définie, on la joue

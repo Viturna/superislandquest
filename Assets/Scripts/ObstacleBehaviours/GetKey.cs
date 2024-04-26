@@ -2,14 +2,38 @@ using UnityEngine;
 
 public class GetKey : MonoBehaviour
 {
-    // Assurez-vous d'avoir un script qui gère le joueur, avec une méthode pour récupérer la clé.
-    void OnTriggerEnter2D(Collider2D col)
+    [SerializeField] private GameObject key; // Ceci est l'objet de la clé
+    [SerializeField] private KeyCode activationKey = KeyCode.E;
+    [SerializeField] private float activationRadius = 1.5f; // Rayon d'activation
+    [SerializeField] private AudioManager audioManager;
+
+    void Update()
     {
-        // Si le joueur entre en collision avec l'objet
-        if (col.gameObject.CompareTag("Player"))
+        GameObject player = GameObject.FindWithTag("Player");
+        if (Input.GetKeyDown(activationKey))
         {
-            col.gameObject.GetComponent<PlayerManager>().AddKey();
-            Destroy(gameObject);
+            // Vérifiez la distance entre le joueur et la clé
+            float distance = Vector3.Distance(player.transform.position, transform.position);
+
+            if (distance <= activationRadius)
+            {
+                // Assurez-vous que PlayerManager est attaché au joueur
+                PlayerManager playerManager = player.GetComponent<PlayerManager>();
+                if (playerManager != null)
+                {
+                    // Ajouter la clé au PlayerManager
+
+                    audioManager.PlaySFX(audioManager.cleSFX);
+                    playerManager.AddKey();
+
+                    // Détruire l'objet de la clé après qu'il a été récupéré
+                    Destroy(gameObject); // Supprime cet objet de la scène
+                }
+                else
+                {
+                    Debug.LogError("PlayerManager script is not attached to the player.");
+                }
+            }
         }
     }
 }
