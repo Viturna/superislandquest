@@ -88,15 +88,11 @@ public class PlayerManager : MonoBehaviour
 		if(hud != null){ //On édite le HUD
 			hud.updateLevelText(_numTableau);
 		}
-        if (SceneManager.GetActiveScene().name == "SceneToEdit" && _numTableau == 8)
-        {
-            StopTimer();
-           
-        }
+     
 
     }
-	
-	public void FinishLine(){
+   
+    public void FinishLine(){
 		audioManager.PlaySFX(audioManager.finishSFX); //Joue le bruitage de fanfare de fin
 		audioManager.StopMusic(); //On arrête la musique
 		StopTimer();

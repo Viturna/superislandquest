@@ -6,18 +6,15 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
 	public GameObject _picturesGroupRules; //On charge ici le groupe objet qui contient toutes les images des Règles
-	public GameObject _picturesGroupCredits; //On charge ici le groupe objet qui contient toutes les images des Crédits
-	
+
 	
 	
 	private int _readingRules = 0; //numéro de l'image des règles qu'on est en train de lire (0 si non activé)
-	private int _readingCredits = 0; //numéro de l'image des crédits qu'on est en train de lire (0 si non activé)
+
 	
 	// Ici, notre programme stockera toutes les images des règles du jeu (il peut n'y en avoir qu'une)
 	private GameObject[] _picturesRules;
-	
-	// Ici, notre programme stockera  toutes les images des crédits du jeu (il peut n'y en avoir qu'une)
-	private GameObject[] _picturesCredits;
+
 	
 	
 	
@@ -40,16 +37,7 @@ public class Menu : MonoBehaviour
 		_picturesGroupRules.SetActive(false);
 		
 
-		//On fait la même chose pour les crédits
-		int children_group_credits = _picturesGroupCredits.transform.childCount;
-		_picturesCredits = new GameObject[children_group_credits];
-		
-		for (int i = 0; i < children_group_credits; ++i){
-			_picturesCredits[i] = _picturesGroupCredits.transform.GetChild(i).gameObject;
-			_picturesCredits[i].SetActive(false);
-		}
-		
-		_picturesGroupCredits.SetActive(false);
+
 	}
 
 	// Fonction qui se lance à chaque frame.
